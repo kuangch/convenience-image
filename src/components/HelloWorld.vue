@@ -3,7 +3,7 @@
     <div>
         <div class="item">
             <div style="width: 30vw; height: 40vh; background: #ccc">
-                <convenience-image alignment="max-center" :src-nor="shupin" :src-err="defaultImg"/>
+                <convenience-image radius="20px" alignment="max-center" :src-nor="shupin" :src-err="defaultImg"/>
             </div>
             显示中间最大面积
         </div>
@@ -12,7 +12,7 @@
 
         <div class="item">
             <div style="width: 30vw; height: 40vh; background: #ccc">
-                <convenience-image alignment="max-contain" :src-nor="shupin" :src-err="defaultImg"/>
+                <convenience-image radius="20px" alignment="max-contain" :src-nor="shupin" :src-err="defaultImg"/>
             </div>
             等比缩放至最大面积
         </div>

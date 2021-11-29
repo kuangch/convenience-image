@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div ref="div">
         <img :src="imageSrc" ref="img"/>
     </div>
 </template>
@@ -7,7 +7,7 @@
 <script>
     export default {
         name: "convenience-image",
-        props: ['srcNor', 'srcErr', 'alignment'],
+        props: ['srcNor', 'srcErr', 'alignment', 'radius'],
         data () {
             return {
                 imageSrc: this.srcNor
@@ -22,6 +22,10 @@
 
             if(_this.imageSrc === undefined){
                 _this.imageSrc = _this.srcErr
+            }
+
+            if (_this.radius){
+              _this.$refs.div.style.borderRadius = _this.radius
             }
 
             switch (_this.alignment){
@@ -87,6 +91,7 @@
     div{
         width: 100%;
         height: 100%;
+        overflow: hidden;
         position: relative;
     }
     div img{
