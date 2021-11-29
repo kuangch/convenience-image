@@ -54,6 +54,12 @@
                     _this.$refs.img.style.cssText += 'width: 100% !important; height: 100% !important; object-fit: contain'
 
                     break
+
+                case 'max-center':
+                    // 最大包含
+                    _this.$refs.img.style.cssText += 'width: 100% !important; height: 100% !important; object-fit: cover'
+
+                  break
                 default:
                     // 默认上下左右居中
                     _this.$refs.img.style.margin = 'auto'

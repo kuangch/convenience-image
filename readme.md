@@ -24,10 +24,11 @@ Vue.use(ConvenienceImage)
 
 组件属性
 ```
-alignment: 图片的对齐方式(left/right/top/bottom/left-top/max-contain)
+alignment: 图片的对齐方式(left/right/top/bottom/left-top/max-contain/max-center)
 srcNor: 要加载的图片
 srcErr: 加载失败后显示的默认图片
 ```
 
 ## 效果
+![image](https://raw.githubusercontent.com/kuangch/convenience-image/master/screen0.jpg)
 ![image](https://raw.githubusercontent.com/kuangch/convenience-image/master/screen.jpg)
